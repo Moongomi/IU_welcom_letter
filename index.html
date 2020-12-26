@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2020년을 보내며</title>
+    <link rel="shortcut icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9iBUKXhtFAhYdAjX3xfILtQdL-T_xl2-ELQ&usqp=CAU">
+    <meta property="og:image"
+        content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlaMFsm7-Er1nPXywueSm9HhfCcfMcFe5WeA&usqp=CAU">
+    <meta property="og:title" content="크리스마스 카드">
+    <meta property="og:description" content="비대면 시대에는 온라인으로 편지를 전달한다~ 이거야~">
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poor Story', cursive;
+        }
+
+        body {
+            background-color: #9b070f;
+        }
+
+        .envelope {
+            background-image: url("https://pngimg.com/uploads/envelope/envelope_PNG18366.png");
+            background-size: cover;
+            background-position: center;
+            width: 200px;
+            height: 200px;
+            margin: 200px auto 0 auto;
+            cursor: pointer;
+        }
+
+        .envelope-msg {
+            text-align: center;
+            color: white;
+        }
+
+        .letter-open {
+            display: none;
+        }
+
+        .letter-close {
+            display: block;
+        }
+
+        .IU {
+            /*background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/rtan.gif");*/
+            background-image: url("https://1.bp.blogspot.com/-kKUZrX4ijzA/X8CLohExjbI/AAAAAAAFPkQ/sXxVWMbbO0sea7Gaie4BiASRbpLxOQSSACLcBGAsYHQ/s0/2.gif");
+            background-size: cover;
+            background-position: center;
+            width: 200px;
+            height: 200px;
+            margin: 100px auto 0 auto;
+            background-color: white;
+            border-radius: 100px;
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+
+        .letter-title {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            color: white;
+            text-align: center;
+        }
+
+        .msgbox {
+            background-color: ivory;
+            width: 400px;
+            margin: auto;
+            color: brown;
+            padding: 30px;
+            font-size: 20px;
+            line-height: 30px;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+
+        .from {
+            text-align: right;
+            margin-bottom: 0px;
+        }
+
+        .music {
+            width: 400px;
+            height: 35px;
+            margin: 10px auto auto auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .music iframe {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 2000px;
+            border: none;
+        }
+
+        @media screen and (max-width: 760px) {
+            .msgbox {
+                width: 280px;
+                padding: 20px;
+            }
+
+            .rtan {
+                width: 150px;
+                height: 150px;
+                margin: 70px auto 0px auto;
+            }
+
+            .letter-title {
+                font-size: 28px;
+            }
+
+            .envelope {
+                margin: 150px auto 0px auto;
+            }
+
+        }
+    </style>
+
+    <script>
+        function open_letter() {
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+
+        function go_iu() {
+            alert('드디어 기다림의 이유를 만나러')
+            window.location.href = 'https://www.youtube.com/c/dlwlrma/featured'
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="envelope-msg">봉투를 열어봐</h2>
+    </div>
+
+    <div class="letter-open">
+        <div class="IU" onclick="go_iu()"></div>
+        <h1 class="letter-title">2020년 수고 많았어!</h1>
+
+        <div class="msgbox">
+            올해는 우리 꼭 더 <br />
+            가까이에서 사랑할 수 있길..❤ <br />
+            2021년에도 사이 좋게 지내자 <br />
+            내 친구 유애나♡ <br />
+            <p class="from">지은(2021년 시즌그리팅)</p>
+        </div>
+        <div class="music">
+            <iframe src="https://www.youtube.com/embed/w14rSMl35ro?autoplay=1" allow="autoplay"></iframe>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
